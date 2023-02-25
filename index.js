@@ -6,7 +6,7 @@ let allOnlineUsers=[]
 
 io.on("connection", socket => {
   const { id } = socket.client;
-  console.log(`User connected: ${id}`);
+  console.log(`User conne: ${id}`);
   socket.on("join",({userName,msg})=>{
    
    	  io.emit("join", {userName,msg});
